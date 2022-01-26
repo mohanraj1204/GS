@@ -1,0 +1,121 @@
+/* 
+  Localizable.strings
+  RightNow
+
+  Created by Mohanraj on 31/03/20.
+  Copyright © 2020 TwilightITSolution. All rights reserved.
+*/
+
+"AppName" = "Goldman Sachs";
+"DontHaveAccount" = "NEED AN ACCOUNT?  SIGN-UP HERE..";
+"SignUp" = "SIGN-UP HERE..";
+"ResetPassword" = "To recover your password you need to enter Registered EMAIL ID or MOBILE NUMBER";
+"EmailId" = "EMAIL ID";
+"MobileNo" = "MOBILE NUMBER";
+"LocationDisabled" = "Location Services is disabled";
+"Ok" = "Ok";
+"Cancel" = "Cancel";
+"NeedLocationAccess" = "Right Now needs access to your location. Please turn on Location Services in your device settings";
+"GotoSettings" = "Go to Settings";
+"RightNowUpdate" = "Right Now Update";
+"RightNowUpdateContent" = "A new version %@ is available for you and is ready to install.";
+"InstallNow" = "Install Now";
+"NoThanks" = "No,Thanks";
+"CommingSoon" = "Comming Soon!";
+"LogOut" = "Are you sure do you want to logout?";
+"NotValidEmail" = "* Please enter valid Email ID";
+"EnterEmailOrPhone" = "* Please enter Email ID/Phone Number before proceeding";
+"EnterPassword" = "* Please enter password before proceeding";
+"StartTimeNotUpdate" = "Please update start time before updating end time!";
+"WorkingDayNotChoosed" = "Please choose atleast one working day for proceeding future!";
+"UserNameIsNotValid" = "Please enter user name before proceeding future!";
+"PhoneNoIsNotValid" = "Please enter phone number before proceeding future!";
+"ZipCodeIsNotValid" = "Please enter ZipCode before proceeding future!";
+"PasswordIsNotValid" = "Please enter password before proceeding future!";
+"ConfrimPassIsNotValid" = "Please enter confirm password before proceeding future!";
+"PassConfirmPasswordNotSame" = "Password & Confirm password are not same!";
+"BusinessNameIsNotValid" = "Please enter business name before proceeding future!";
+"BusinessTypeIsNotValid" = "Please enter business type before proceeding future!";
+"BusinessInfoIsNotValid" = "Please enter business info before proceeding future!";
+"BusinessServiceIsNotValid" = "Please add any of your services before proceeding future!";
+"BusinessTimeIsNotValid" = "Please add your shop oppening hours before proceeding future!";
+"BusinessLocationIsNotValid" = "Please add your shop location before proceeding future!";
+"BusinessDocumentIsNotValid" = "Please add your business document proof before proceeding future!";
+"StartOrEndDateIsNotUpdate" = "Please update both your start/end time beforeproceeding future!";
+"PleaseWait" = "Loading...";
+"NoInternet" = "No internet connection available.";
+"EmptyField" = "Field cannot be empty!";
+"ServiceDiscoutCostNotValid" = "Your service discount cost is not valid!";
+"DiscriptionIsNotValid" = "Please provide description of your service!";
+"ProfileImgIsNotValid" = "Please choose profile image before proceed!";
+"ChooseNotCategroy" = "Please choose categroy before adding service";
+"AccountConfirmAccountNotValid" = "Your account and confirm account no is not same!";
+"NoResultFound" = "No Result Found!";
+"ResetPasswordSucess" = "Your password has been changed sucessfully please login again!";
+"BusinessNotUpdated" = "Complete your business registration before proceeding furture!";
+"AccountInfoNotUpdated"= "Complete your account details before proceeding furture!";
+"SignInSucessfull"= "SignIn has been made sucessfully!";
+"DeleteService" = "Are you sure do you want to delete the service?";
+"AuthorizationFailed" = "Authorization failed please signin again!";
+"DeleteLastSerivice" = "Sorry there should be at least one service for a Business.";
+"Date" = "Date";
+"Time" = "Time";
+"WebisteIsEmpty" = "Please enter your business website before proceeding future!";
+"NoReview" = "No Reviews Available!";
+"NoCustomer" = "No Customer Available!";
+"NoLastActivity" = "No Last Activity Available!";
+"NoPayment" = "Payment Transcation Unavailable!";
+"DiscountIsHigher" = "Service discount cost should be lesser than your service cost!";
+"Done" = "Done";
+"SubCategoryDosntFails" = "Your previously added serivce are not belong to the category you choosed if you want to proceed with deleting the services dosent belong to catory you choosed?";
+"Delete" = "Delete";
+"EmailNotVerified" = "Your email has not been verified yet! Please verify your email";
+"StartTimeNotChoosed" = "Please choose start time before updating endtime";
+"EstimationTimeNotChoosed" = "Please choose EST time before updating startTime";
+"ResendEmail" = "Resend Email";
+"CantAddBankAccount" = "Sorry you cannot add more than 3 bank account!";
+"DeleteBankAccount" = "Are you sure do you want to delete this Bank account?";
+"CantChooseMoreThan2ParentCategory" = "Sorry, you can choose maximum 2 category only";
+"Description" = "Description";
+"ChatNotFound" = "No Chat Found!";
+"ChatUnavailble" = "Currently chat is unavailable!";
+"AddressNotFound" = "Address Unavailable!";
+"UpdateService" = "UPADATE SERVICE";
+"AddService" = "ADD SERVICE";
+"JustNow" = "Just now";
+"BusinessIsActivated" = "* Your Business is live";
+"BusinessIsUnActivated" = "* Your Business is not active yet, Admin is verifying your profile please wait!";
+"Skip" = "Skip";
+"NoBankInfo" = "No Bank Acccount Found";
+"NotValidAddres" = "Could not foud a location!";
+"PasswordValidation" = "Password should contains Uppercase, Number, Special Characters";
+"TermsAndConditionValidation" = "Please accept the Terms And Condition before proceeding furture";
+"TermsAndCondition" = "Terms And Conditions";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
