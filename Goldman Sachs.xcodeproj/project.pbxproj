@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6BAC805F27A260A800B05DB4 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC805E27A260A800B05DB4 /* AlertManager.swift */; };
+		6BAC806127A261C600B05DB4 /* Userdefault+RightNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC806027A261C600B05DB4 /* Userdefault+RightNow.swift */; };
 		6BF1770627A11A2B00F56493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF1770527A11A2B00F56493 /* AppDelegate.swift */; };
 		6BF1770827A11A2B00F56493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF1770727A11A2B00F56493 /* SceneDelegate.swift */; };
 		6BF1770D27A11A2B00F56493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1770B27A11A2B00F56493 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		6BAC805E27A260A800B05DB4 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		6BAC806027A261C600B05DB4 /* Userdefault+RightNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Userdefault+RightNow.swift"; sourceTree = "<group>"; };
 		6BF1770227A11A2B00F56493 /* Goldman Sachs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goldman Sachs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF1770527A11A2B00F56493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BF1770727A11A2B00F56493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		6BF1772527A11AF800F56493 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				6BAC806027A261C600B05DB4 /* Userdefault+RightNow.swift */,
 				6BF177A827A16F7A00F56493 /* Encodable+RightNow.swift */,
 				6BF177A627A16E8600F56493 /* Dictionary+RightNow.swift */,
 				6BF1773527A11D9100F56493 /* String+GS.swift */,
@@ -380,6 +383,7 @@
 				6BF1772C27A11B9E00F56493 /* ConectionManager.swift in Sources */,
 				6BF1770827A11A2B00F56493 /* SceneDelegate.swift in Sources */,
 				6BF1779627A1696C00F56493 /* HttpRequestMapper.swift in Sources */,
+				6BAC806127A261C600B05DB4 /* Userdefault+RightNow.swift in Sources */,
 				6BF1779C27A1696C00F56493 /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

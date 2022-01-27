@@ -57,6 +57,8 @@ class HomeViewModelImpl : HomeViewModel {
             case .success(let response):
                 if (response.date?.count ?? 0) > 0 {
                     self.model = response
+                    //Save response to the local
+                    UserDefaults.standard.set(encodable: self.model, forKey: UserdefaultKey.of.nasaPreviousDetails)
                     completion(response)
                 } else {
                     AlertManager.shared.showAlert(msg: "No Data Found on this specified date!")
@@ -64,6 +66,13 @@ class HomeViewModelImpl : HomeViewModel {
                 break;
             case .failure(let failure):
                 print(failure.localizedDescription)
+                if let obj = UserDefaults.standard.value(NasaModel.self, forKey: UserdefaultKey.of.nasaPreviousDetails) {
+                    if((obj.date?.count ?? 0) > 0){
+                        self.model = obj
+                        completion(obj)
+                    }
+                }
+                
                 break
             }
         }
