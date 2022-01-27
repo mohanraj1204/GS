@@ -62,5 +62,7 @@ let dummy = UserDefaults.standard.value(Dummy.self, forKey: "K1")
 struct UserdefaultKey  {
     struct of {
         static let nasaPreviousDetails = "nasaPreviousDetails"
+        static let nasaFavDetails = "nasaFavDetails"
+
     }
 }

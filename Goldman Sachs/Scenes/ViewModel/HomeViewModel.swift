@@ -9,12 +9,14 @@ import Foundation
 
 protocol HomeViewModel {
     func getNasaDetailsFromSerer(completion: @escaping (NasaModel) -> Void,error: @escaping (Error) -> Void)
+    func setFavUnFav(completion: @escaping () -> Void)
     
     var getImageURL : String {get}
     var getTitle : String {get}
     var getExplanation : String {get}
     var getDate : String {get}
     var setDate : String? {get set}
+    var getFav : String {get}
 }
 
 class HomeViewModelImpl : HomeViewModel {
@@ -44,6 +46,16 @@ class HomeViewModelImpl : HomeViewModel {
     
     var getDate: String {
         return model?.date ?? ""
+    }
+    
+    var getFav: String {
+        let isFav = arrFavList.contains { obj in
+            if(obj.date == self.model?.date){
+                return true
+            }
+            return false
+        }
+       return isFav ? "Fav" : "UnFav"
     }
 
     func getNasaDetailsFromSerer(completion: @escaping (NasaModel) -> Void,error: @escaping (Error) -> Void)
@@ -84,6 +96,23 @@ class HomeViewModelImpl : HomeViewModel {
            return dateFormatter.string(from: Date())
     }
        
+    
+    func setFavUnFav(completion: @escaping () -> Void) {
+        let indexValue = arrFavList.firstIndex(where: { (objNasa) -> Bool in
+            if objNasa.date == self.model?.date {
+                return true
+            }
+            return false
+        })
+        if((indexValue ?? -1) > -1){
+            arrFavList.remove(at: indexValue ?? 0)
+        } else {
+            if let obj = self.model{
+                arrFavList.append(obj)
+            }
+        }
+     completion()
+    }
 }
    
 

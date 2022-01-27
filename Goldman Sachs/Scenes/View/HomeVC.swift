@@ -10,6 +10,7 @@ import UIKit
 class HomeVC: UIViewController {
     static let NibName = "HomeVC"
     
+    @IBOutlet weak var btnFav: UIButton!
     @IBOutlet weak var txtDate: UITextField!
     @IBOutlet weak var txtVwExplanation: UITextView!
     @IBOutlet weak var imgVw: UIImageView!
@@ -22,13 +23,15 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupInitals()
         setupNavigationBar()
         getNasaDetails()
         setupDatePicker()
     }
     
     private func setupInitals(){
-        
+        self.btnFav.addTarget(self, action: #selector(onClkFavUnFav(sender:)), for: .touchUpInside)
+
     }
     private func setupNavigationBar(){
         self.title = "NASA"
@@ -56,11 +59,17 @@ class HomeVC: UIViewController {
         self.getNasaDetails()
     }
 
+    @objc func onClkFavUnFav(sender : UIButton){
+        viewModel.setFavUnFav {
+            self.btnFav.setTitle(self.viewModel.getFav, for: .normal)
+        }
+    }
     
     private func setupUI(){
         self.txtDate.text = viewModel.setDate
         self.lblDate.text = viewModel.getDate
         self.lblTitle.text = viewModel.getTitle
+        self.btnFav.setTitle(viewModel.getFav, for: .normal)
         self.txtVwExplanation.text = viewModel.getExplanation
         self.imgVw.setImageFrom(urlStr: viewModel.getImageURL)
     }

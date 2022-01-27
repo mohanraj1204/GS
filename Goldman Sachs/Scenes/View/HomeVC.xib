@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Goldman_Sachs" customModuleProvider="target">
             <connections>
+                <outlet property="btnFav" destination="lUQ-Ee-VSX" id="CLY-0c-ZyA"/>
                 <outlet property="imgVw" destination="725-ro-AP1" id="LHE-NY-hVq"/>
                 <outlet property="lblDate" destination="1yz-99-LBl" id="nxf-zY-g86"/>
                 <outlet property="lblTitle" destination="ohX-kC-Cyk" id="aRK-p8-i0r"/>
@@ -81,15 +82,29 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUQ-Ee-VSX">
+                    <rect key="frame" x="10" y="98" width="100" height="34"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="gb3-cf-ScV"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Fav"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pZq-e6-tPd" secondAttribute="trailing" constant="20" id="2Va-k8-yRV"/>
+                <constraint firstItem="lUQ-Ee-VSX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="2hg-1r-Tcx"/>
+                <constraint firstItem="pZq-e6-tPd" firstAttribute="height" secondItem="lUQ-Ee-VSX" secondAttribute="height" id="3sD-2t-3G8"/>
                 <constraint firstItem="s8Y-W2-JNt" firstAttribute="top" secondItem="pZq-e6-tPd" secondAttribute="bottom" constant="10" id="8zQ-dQ-SPc"/>
                 <constraint firstItem="s8Y-W2-JNt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="DEM-4N-hHc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="s8Y-W2-JNt" secondAttribute="trailing" constant="10" id="Dvl-rJ-mOa"/>
                 <constraint firstItem="pZq-e6-tPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Gxk-eL-YrS"/>
+                <constraint firstItem="pZq-e6-tPd" firstAttribute="top" secondItem="lUQ-Ee-VSX" secondAttribute="top" id="TRU-VP-ZoS"/>
+                <constraint firstItem="pZq-e6-tPd" firstAttribute="bottom" secondItem="lUQ-Ee-VSX" secondAttribute="bottom" id="eUk-Ou-NGK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="s8Y-W2-JNt" secondAttribute="bottom" constant="10" id="yR2-SK-875"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

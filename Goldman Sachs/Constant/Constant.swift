@@ -11,7 +11,7 @@ import UIKit
 
 let appDelegate = UIApplication.shared.delegate as? AppDelegate
 var currentEnvironment : APIRouter.EnvironmentType = .Production
-
+var arrFavList : [NasaModel] = []
 
 //MARK:-App Info
 struct AppInfo {
