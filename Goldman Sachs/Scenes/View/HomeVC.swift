@@ -10,6 +10,7 @@ import UIKit
 class HomeVC: UIViewController {
     static let NibName = "HomeVC"
     
+    @IBOutlet weak var txtDate: UITextField!
     @IBOutlet weak var txtVwExplanation: UITextView!
     @IBOutlet weak var imgVw: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
@@ -23,22 +24,25 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         setupNavigationBar()
         getNasaDetails()
+        setupDatePicker()
     }
     
+    private func setupInitals(){
+        
+    }
     private func setupNavigationBar(){
         self.title = "NASA"
-        let logoutBarButtonItem = UIBarButtonItem(title: "Date", style: .done, target: self, action: #selector(chooseDate))
-        self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
     }
     
-    @objc func chooseDate(){
+    private func setupDatePicker(){
         let datePicker: UIDatePicker = UIDatePicker()
-        datePicker.preferredDatePickerStyle = .compact
-        datePicker.frame = CGRect(x: 10, y: 50, width: self.view.frame.width, height: 200)
+        datePicker.preferredDatePickerStyle = .inline
+        datePicker.datePickerMode = .date
         datePicker.timeZone = NSTimeZone.local
         datePicker.backgroundColor = UIColor.white
-        datePicker.addTarget(self, action: #selector(self.datePickerValueChanged(_:)), for: .valueChanged)
-        self.view.addSubview(datePicker)
+        datePicker.maximumDate = Date()
+        datePicker.addTarget(self, action: #selector(self.datePickerValueChanged(_:)), for: .allEvents)
+        txtDate.inputView = datePicker
     }
     
     @objc func datePickerValueChanged(_ sender: UIDatePicker){
@@ -47,10 +51,14 @@ class HomeVC: UIViewController {
         let selectedDate: String = dateFormatter.string(from: sender.date)
         print("Selected value \(selectedDate)")
         viewModel.setDate = selectedDate
+        txtDate.text = selectedDate
+        txtDate.resignFirstResponder()
+        self.getNasaDetails()
     }
 
     
     private func setupUI(){
+        self.txtDate.text = viewModel.setDate
         self.lblDate.text = viewModel.getDate
         self.lblTitle.text = viewModel.getTitle
         self.txtVwExplanation.text = viewModel.getExplanation
